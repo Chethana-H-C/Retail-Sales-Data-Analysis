@@ -6,8 +6,11 @@ From data to decisions: Retail sales analysis using SQL to reveal patterns, perf
 This project demonstrates an end-to-end SQL data analysis of a retail sales dataset. It includes table creation, data cleaning, data exploration, and analytical queries to extract valuable business insights such as top customers, sales trends, and category-wise performance.
 
 The goal of this project is to:
+
 •Understand customer purchasing behavior
+
 •Identify sales trends by category, time, and demographics
+
 •Apply SQL for data cleaning, aggregation, and analytical reporting
 
 **1. Table Creation**
@@ -33,8 +36,11 @@ CREATE TABLE retail_sales (
 **2. Data Cleaning**
 
 • Checked for missing values in all key columns.
+
 • Removed null and incomplete transaction records.
+
 • Verified correct data types for all fields (DATE, TIME, FLOAT, etc.).
+
 • Ensured all transactions_id values were unique (Primary Key).Checked and removed rows with missing (NULL) values to maintain data quality and accuracy.
 
 ```sql
