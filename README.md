@@ -1,7 +1,7 @@
 # Retail-Sales-Data-Analysis
 From data to decisions: Retail sales analysis using SQL to reveal patterns, performance, and key metrics.
 
-**Project Overview**
+**📘 Project Overview**
 
 This project demonstrates an end-to-end SQL data analysis of a retail sales dataset. It includes table creation, data cleaning, data exploration, and analytical queries to extract valuable business insights such as top customers, sales trends, and category-wise performance.
 
@@ -13,9 +13,9 @@ The goal of this project is to:
 
 •Apply SQL for data cleaning, aggregation, and analytical reporting
 
-**1. Table Creation**
+**🗂️ 1. Table Creation**
 
-Created a table named retail_sales to store retail transaction details including sales date, customer demographics, item category, and sales values.
+Created a table named retail_sales to store retail transaction details such as sales date, customer demographics, item category, and sales values.
 
 ```sql
 CREATE TABLE retail_sales (
@@ -33,7 +33,7 @@ CREATE TABLE retail_sales (
 );
 ```
 
-**2. Data Cleaning**
+**♻️ 2. Data Cleaning**
 
 • Checked for missing values in all key columns.
 
@@ -41,7 +41,9 @@ CREATE TABLE retail_sales (
 
 • Verified correct data types for all fields (DATE, TIME, FLOAT, etc.).
 
-• Ensured all transactions_id values were unique (Primary Key).Checked and removed rows with missing (NULL) values to maintain data quality and accuracy.
+• Ensured all transactions_id values were unique (Primary Key).
+
+• Checked and removed rows with missing (NULL) values to maintain data quality and accuracy.
 
 ```sql
 -- Check for missing values
@@ -78,9 +80,9 @@ WHERE
     OR total_sale IS NULL;
 ```
 
-**3. Data Exploration**
+**🔍 3. Data Exploration**
 
-To gain an initial understanding of the dataset, several exploratory SQL queries were performed. These queries help analyze the volume of transactions, customer diversity, and the range of product categories in the retail dataset.
+To gain an initial understanding of the dataset, several exploratory SQL queries were performed. These queries helped to understand dataset size, customer base, and product diversity.
 
 Key Exploration Queries:
 
@@ -107,7 +109,7 @@ SELECT DISTINCT category
 FROM retail_sales;
 
 ```
-**4. Data Analysis & Insights**
+**📈 4. Data Analysis & Insights**
    
 Below are some key business questions answered using SQL queries on the retail_sales dataset. These queries help in better understaning of how sales are performing, what customers prefer, and which products are doing well.
 
@@ -193,3 +195,50 @@ SELECT
     COUNT(*) AS total_orders
 FROM retail_sales
 GROUP BY shift;
+
+```
+**🧮 5. SQL Features Used**
+
+• GROUP BY, ORDER BY, and HAVING clauses
+
+• Aggregate functions: SUM(), COUNT(), AVG()
+
+• Conditional statements: CASE WHEN
+
+• Window functions: RANK()
+
+• Filtering with WHERE, BETWEEN, and DISTINCT
+
+**🛠️ 6. Tools Used**
+
+• Database: MySQL
+
+• Interface: MySQL Workbench
+
+• Language: SQL
+
+• Data Source: CSV file
+
+**🔑 7. Key Insights**
+
+From the analysis, the following insights were derived:
+
+• Clothing and Electronics are the top-selling product categories.
+
+• Customers aged 25–40 contribute to the highest sales.
+
+• The Afternoon shift records the highest number of sales.
+
+• Top 5 customers contribute a significant share of total revenue.
+
+• The best-selling months align with festive and holiday seasons.
+
+**💼 8. Business Insights**
+
+• Category Focus: Concentrate marketing on high-performing categories like Clothing and Electronics.
+
+• Customer Targeting: Design loyalty programs for frequent buyers aged 25–40.
+
+• Operational Efficiency: Increase staffing during afternoon hours when transactions peak.
+
+• Promotional Strategy: Plan campaigns during top-performing months to maximize revenue.
