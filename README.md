@@ -231,8 +231,6 @@ From the analysis, the following insights were derived:
 
 • Top 5 customers contribute a significant share of total revenue.
 
-• The best-selling months align with festive and holiday seasons.
-
 **💼 8. Business Insights**
 
 • Category Focus: Concentrate marketing on high-performing categories like Clothing and Electronics.
