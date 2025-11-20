@@ -19,17 +19,17 @@ Created a table named retail_sales to store retail transaction details such as s
 
 ```sql
 CREATE TABLE retail_sales (
-    transaction_id INT PRIMARY KEY NOT NULL,
-    sale_date DATE,
-    sale_time TIME,
-    customer_id INT,
-    gender VARCHAR(15),
-    age INT,
-    category VARCHAR(15),
-    quantity FLOAT,
-    price_per_unit FLOAT,
-    cogs FLOAT,
-    total_sale FLOAT
+    transactions_id INT PRIMARY KEY NOT NULL,
+    sale_date DATE NULL,
+    sale_time TIME NULL,
+    customer_id INT NULL,	
+    gender VARCHAR(15) NULL,
+    age INT NULL,
+    category VARCHAR(15) NULL,
+    quantity FLOAT NULL,	
+    price_per_unit FLOAT NULL,
+    cogs FLOAT NULL,
+    total_sale FLOAT NULL
 );
 ```
 
@@ -105,7 +105,7 @@ FROM retail_sales;
 
 -- Retrieve a list of all distinct product categories
 
-SELECT DISTINCT category
+SELECT DISTINCT category AS category_list
 FROM retail_sales;
 
 ```
